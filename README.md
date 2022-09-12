@@ -18,4 +18,4 @@ You should not recode everything, just fix it!
 
 
 ## File System
-- [0x00-challenge] (./0x00-challenge)
+- [0x00-challenge](./0x00-challenge)
