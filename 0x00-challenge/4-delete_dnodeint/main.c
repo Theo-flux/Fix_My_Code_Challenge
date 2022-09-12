@@ -1,20 +1,69 @@
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- * free_dlistint - Free a list
+ * main - check the code for Holberton School students.
  *
- * @head: A pointer to the first element of the list
+ * Return: Always EXIT_SUCCESS.
  */
-void free_dlistint(dlistint_t *head)
+int main(void)
 {
-	dlistint_t *node;
+	dlistint_t *head;
 
-	while (head)
-	{
-		node = head;
-		head = head->next;
-		free(node);
-	}
+	head = NULL;
+	add_dnodeint_end(&head, 0);
+	add_dnodeint_end(&head, 1);
+	add_dnodeint_end(&head, 2);
+	add_dnodeint_end(&head, 3);
+	add_dnodeint_end(&head, 4);
+	add_dnodeint_end(&head, 98);
+	add_dnodeint_end(&head, 402);
+	add_dnodeint_end(&head, 1024);
+	print_dlistint(head);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 5);
+	print_dlistint(head);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	print_dlistint(head);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	print_dlistint(head);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	print_dlistint(head);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	print_dlistint(head);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	print_dlistint(head);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	print_dlistint(head);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	printf("-----------------\n");
+	delete_dnodeint_at_index(&head, 0);
+	print_dlistint(head);
+	free_dlistint(head);
+	return (0);
 }
